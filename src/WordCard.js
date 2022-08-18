@@ -39,6 +39,12 @@ export default function WordCard(props){
         setIsActive(val);
     }
 
+    const reset = () => {
+        setState({ ...state, guess: "", attempt: state.attempt + 1 });
+        setCount(0)
+        setResults("")
+      }
+
     const activationHandler = c => {
         console.log(`${c} has been activated.`)
 
@@ -71,6 +77,7 @@ export default function WordCard(props){
             <div>
                 Time: {count} Second
             </div>
+            <button onClick={reset}>Restart</button>
             <div>
                 {
                     state.chars.map((c, i) => 
