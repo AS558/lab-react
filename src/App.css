@@ -1,14 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+  font-family: 'Silkscreen', cursive;
+  background-color: rgb(31, 109, 203);
+}
+
 .card {
   display: inline-block;
   text-align: center;
-  width: 3em;
-  font-size: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 1em;
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  box-shadow: 0 4px 8px 0 rgba(150,213,250,1);
+  margin: 30px;
   user-select: none;
+  border: 3px solid rgb(3, 33, 103);
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bolder;
+	background-color: rgb(1, 250, 125);
 }
 
 .activeCard {
-  color: red;
-  background: pink;
+  color: rgb(250, 56, 1);
+  background: rgb(253, 162, 223);
+  box-shadow: 0 4px 8px 0 rgba(250,21,250,1);
+}
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 30px;
+  background-color: #ECA951;
+  text-align: center;
+}
+
+div {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.font {
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.result {
+  font-size: 40px;
+  color: pink;
+  margin-bottom: 40px;
 }

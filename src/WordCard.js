@@ -68,22 +68,20 @@ export default function WordCard(props){
     }
 
     return (
-        <>
-            {result != "" && (
-                <>
-                    <div>{result}</div>
-                </>
-            )}
-            <div>
-                Time: {count} Second
-            </div>
-            <button onClick={reset}>Restart</button>
+        <div>
             <div>
                 {
                     state.chars.map((c, i) => 
                     <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>)
                 }
             </div>
-        </>
+            <div className='font'>Time: {count} Second</div>
+            {result != "" && (
+                <>
+                    <div className='result'>{result}!!!</div>
+                </>
+            )}
+            <button onClick={reset}>Restart</button>
+        </div>
     );
 }
